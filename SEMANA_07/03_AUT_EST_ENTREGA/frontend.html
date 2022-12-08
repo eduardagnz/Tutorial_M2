@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <title>Tutorial - Layout Responsivo</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#titulo").hover(function () {
+        $(this).css("color", "#2D7981");
+      },
+        function () {
+          $(this).css("color", "#000");
+        });
+    });
+    $(document).ready(function () {
+      $("p").click(function () {
+        $(this).hide();
+      });
+    });
+    $(document).ready(function () {
+      $("h2").click(function () {
+        $(this).hide();
+      });
+    });
+    $(document).ready(function () {
+      $("li").click(function () {
+        $(this).hide();
+      });
+    });
+
+    $(document).ready(function () {
+      $("button").click(function () {
+        $.get("shrek.txt", function (text) {
+          alert("Roteiro: " + text);
+        });
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+  <div id="principal">
+    <div id="logo"><img src="https://www.inteli.edu.br/wp-content/uploads/2022/04/28103439/Logo-Container.png"
+        alt="Logotipo Inteli"></div>
+    <div id="conteudo">
+      <div class="interno">
+        <h1 class="titulo" id="titulo" alt="titulo">Eduarda Gonzaga</h1>
+        <p><img src="81364594-d11e-47e5-b7c7-656f063691c2.jpg" alt="foto" class="foto" id="foto"></p>
+      </div>
+      <button>Ler roteiro</button>
+    </div>
+    <div id="lateral">
+      <div class="interno">
+        <h2 class="titulo">Sobre mim</h2>
+        <p> Recém graduada do ensino médio integrado ao técnico em
+          administração de empresas, em uma escola competitiva,
+          designada como representante de turma durante o primeiro
+          ano. Busco desenvolver minhas habilidades em uma
+          primeira oportunidade formal no mercado, oferecendo um
+          skill set com enfoque em gerência e organização. Média
+          Geral: MB/B
+        </p>
+        <br>
+        <h2 class="titulo">Experiência Profissional</h2>
+        <p>Jan 2022 - Marc 2022</p>
+        <p>Estágio de Férias - Colégio Apolo</p>
+        <li>Desenvolvimento de lista, conferência, atendimentos e
+          agendamentos;
+        </li>
+        <li>Uso integrado de WS Excel e WS Word.
+        </li>
+      </div>
+    </div>
+    <div id="rodape">
+      <p>Meu currículo.</p>
+    </div>
+  </div>
+</body>
+
+</html>
