@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./funcoes.js"></script>
+    <title>Reforma</title>
+</head>
+
+<body>
+    <div>
+        <h2>ESTÁ PRECISANDO CALCULAR A QUANTIDADE CORRETA DE AZULEJOS PARA UMA REFORMA?</h2>
+        <h3>Atráves dessa calculadora é possível verificar saber e ainda com 5% extra para acertos!</h3>
+        <h5>Digite o valor que representa a altura do azulejo</h5>
+        <input type="number" id="alturaAzulejo">
+        <p></p>
+        <h5>Digite o valor que representa a largura do azulejo</h5>
+        <input type="number" id="larguraAzulejo">
+        <p></p>
+        <h5>Digite o valor que representa a altura da parede</h5>
+        <input type="number" id="alturaParede">
+        <p></p>
+        <h5>Digite o valor que representa a largura da parede</h5>
+        <input type="number" id="larguraParede">
+        <p></p>
+        <button onclick="calculo()">Calcular</button><br />
+        <div id="confirmeReforma" style='display:inline'></div><br />
+    </div>
+    <script src="./funcoes.js"></script>
+</body>
+<!-- <button onclick="calculo()">Calcular</button><br />
+Resultado: <div id="confirmeReforma" style='display:inline'></div><br /> -->
+
+</html>
