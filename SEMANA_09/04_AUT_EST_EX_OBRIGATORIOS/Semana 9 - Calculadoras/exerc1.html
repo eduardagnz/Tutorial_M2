@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./funcoes.js"></script>
+    <title>VP & VF</title>
+</head>
+
+<body>
+    <article>
+        <div>
+            <h1>Valor Presente e Valor Futuro</h1>
+
+            <label for="taxa">Insira a taxa:</label>
+            <input type="number" id="taxa">
+            <br>
+            <br>
+            <label for="tempo">Insira o tempo:</label>
+            <input type="number" id="tempo">
+            <br>
+            <br>
+            <label for="tipo">Selecione o tipo a ser inserido:</label>
+            <select name="opcao" id="op">
+                <option value="VP">Valor Presente</option>
+                <option value="VF">Valor Futuro</option>
+            </select>
+            <input type="number" id="opcao">
+            <br><br>
+            <input type="button" value="confirme" onclick="valorf()">
+            <br>
+            <p></p>
+            <h5>Lembre-se: o tempo deve estar na mesma unidade que a taxa, ou seja, se a taxa esta em meses, logo o
+                tempo deve estar em meses!*</h5>
+            <br><br>
+            <div id="resultado"></div>
+        </div>
+    </article>
+
+</body>
+
+</html>

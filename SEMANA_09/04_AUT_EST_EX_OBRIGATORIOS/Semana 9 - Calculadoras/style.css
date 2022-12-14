@@ -1,0 +1,22 @@
+article {
+    position: relative;
+    background-color: blanchedalmond;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    height: 60vh;
+    width: 200vh;
+}
+
+.rodape {
+    background-color: beige;
+    text-align: left;
+    height: 180px;
+    width: 200vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+#impressao {
+    text-align: left;
+}
